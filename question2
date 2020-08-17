@@ -1,0 +1,27 @@
+import java.util.*;
+class Rectangle {
+    int width, height;
+     void display() {
+        System.out.println(height+" "+width);
+    }
+}
+class RectangleArea extends Rectangle {
+    int res;
+    void read_input() {
+    	RectangleArea  area=new RectangleArea(); 
+        Scanner scan = new Scanner(System.in);
+    	area.height = scan.nextInt();
+    	area.width = scan.nextInt();
+    	res = area.height*area.width;
+    }
+     void display() {
+    	 System.out.println(res);
+    }
+}
+public class ques2 extends RectangleArea{
+public static void main(String args[]) {
+	ques2 ans=new ques2();
+	ans.read_input();
+	ans.display();
+}
+}
